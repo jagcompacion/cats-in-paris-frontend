@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Cats in Paris - Frontend Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Challenge
 
-## Available Scripts
+Your task is to build a very simple React Native mobile app that displays random cat images with captions from the "Cats in Paris" API. The app should allow users to view a cat image with its corresponding caption and fetch a new random cat with a button press.
 
-In the project directory, you can run:
+## Requirements
 
-### `npm start`
+1. Fetch cat data from the API endpoint: `http://localhost:3000/api/v1/cat`
+2. Display the cat image and its caption
+3. Include a button to fetch a new random cat
+4. Handle loading states while the image is being fetched
+5. Handle and display any potential errors
+6. Style the app to be visually appealing
+7. Only `npm run web` needs to show a working app (don't worry about native builds for this)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Get Random Cat
 
-### `npm test`
+```http
+GET /api/v1/cat
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Response:**
+```json
+{
+    "image": "https://example.com/image.jpg",
+    "caption": "A fluffy tabby cat sitting on a Parisian balcony"
+}
+```
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Start the development server:
+   ```bash
+   npm run web
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- React Native
+- Expo
+- TypeScript
+- Tailwind CSS with NativeWind for styling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Styling with Tailwind CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project uses Tailwind CSS with NativeWind for styling. You can use Tailwind's utility classes directly in your components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Example:
+```tsx
+import { View, Text } from 'react-native';
+import { styled } from 'nativewind';
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+const StyledView = styled(View);
+const StyledText = styled(Text);
 
-## Learn More
+export function MyComponent() {
+  return (
+    <StyledView className="flex-1 bg-gray-100 p-4">
+      <StyledText className="text-xl font-bold text-gray-900">
+        Hello, Tailwind!
+      </StyledText>
+    </StyledView>
+  );
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For more information, check out the [NativeWind documentation](https://www.nativewind.dev/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Evaluation Criteria
 
-### Code Splitting
+- Only `npm run web` needs to show a working app (don't worry about native builds for this)
+- Functionality: Does the app work as expected?
+- Code Quality: Is the code clean, well-structured, and maintainable?
+- Error Handling: Are edge cases and errors properly handled?
+- UI/UX: Is the interface user-friendly and visually appealing?
+- Performance: Is the app performant with proper loading states?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Submission
 
-### Analyzing the Bundle Size
+Please submit your solution as a .zip file oro similar, and send to john@imaginationlabs.cloud
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good luck! 😺

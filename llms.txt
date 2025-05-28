@@ -1,0 +1,89 @@
+# React Native/Expo Development Guidelines for AI Assistants
+
+## Required Modifications Marking
+- All AI-generated code changes MUST be marked with a comment in the following format:
+  // modified by <model-name>
+- The comment should be placed at the beginning of the modified section or function
+- This applies to both new code additions and modifications to existing code
+
+## React Native/Expo Specific Guidelines
+
+### Code Structure
+1. Component Organization
+   - Keep components small and focused on a single responsibility
+   - Use functional components with hooks
+   - Prefer composition over inheritance
+   - Use proper TypeScript interfaces for component props
+
+2. State Management
+   - Prefer useState and useEffect for local component state
+   - Use React Context for shared state when necessary
+   - Avoid excessive prop drilling
+   - Use proper TypeScript types for state variables
+
+3. Styling
+   - Use StyleSheet.create() for style definitions
+   - Avoid inline styles when possible
+   - Use proper TypeScript types for style props
+   - Keep styles consistent and maintainable
+
+### Performance Considerations
+1. Optimization
+   - Use useCallback and useMemo appropriately
+   - Implement proper cleanup in useEffect
+   - Avoid unnecessary re-renders
+   - Use proper TypeScript types for performance-critical code
+
+2. Memory Management
+   - Clean up subscriptions and listeners
+   - Handle unmounting properly
+   - Avoid memory leaks in async operations
+
+### Error Handling
+1. Network Requests
+   - Implement proper error boundaries
+   - Handle network failures gracefully
+   - Use proper TypeScript types for API responses
+   - Implement retry logic when appropriate
+
+### Accessibility
+1. Accessibility Features
+   - Use proper accessibility labels
+   - Implement touch targets appropriately
+   - Follow WCAG guidelines for React Native
+   - Use proper TypeScript types for accessibility props
+
+### Expo Specific
+1. Native Modules
+   - Use proper TypeScript types for Expo modules
+   - Follow Expo documentation for native module usage
+   - Handle platform-specific differences appropriately
+
+2. Asset Management
+   - Use proper asset loading patterns
+   - Handle image optimization
+   - Use proper TypeScript types for asset references
+
+## Documentation Requirements
+- All new components must have proper JSDoc comments
+- Complex logic must be documented
+- TypeScript interfaces and types should be documented
+- AI-generated changes must include a brief explanation of the modification
+
+## Testing Requirements
+- All new components should have corresponding tests
+- AI-generated code changes should include test modifications
+- Use proper TypeScript types in test files
+
+## Version Control
+- AI-generated changes should be committed with a clear message
+- Include the AI model name in commit messages for AI-generated changes
+- Maintain proper TypeScript type definitions in version control
+
+## Example of Required Marking
+```typescript
+// modified by cascade
+function modifiedFunction() {
+  // AI-generated code here
+}
+```
