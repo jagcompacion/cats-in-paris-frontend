@@ -4,8 +4,8 @@
 
 Your task is to build a very simple React Native mobile app that displays random cat images with captions from the "Cats in Paris" API. The app should allow users to view a cat image with its corresponding caption and fetch a new random cat with a button press.
 
-## Wireframe:
-![image](https://github.com/user-attachments/assets/93e4ce00-1e54-4211-aea6-c62242d9589b)
+## Wireframe
+![image](https://github.com/user-attachments/assets/93e4ce00-1e54-4211-aea6-c62242d9589b | width=400))
 
 ## Requirements
 
