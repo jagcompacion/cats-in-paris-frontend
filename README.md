@@ -89,6 +89,6 @@ For more information, check out the [NativeWind documentation](https://www.nativ
 
 ## Submission
 
-Please submit your solution as a .zip file oro similar, and send to john@imaginationlabs.cloud
+Please submit your solution as a .zip file or similar, and send back
 
 Good luck! 😺
