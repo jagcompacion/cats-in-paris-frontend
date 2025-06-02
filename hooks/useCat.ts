@@ -12,15 +12,17 @@ type CatState = {
   error: string | null;
 };
 
+const initState = {
+  data: null,
+  isLoading: true,
+  error: null,
+};
+
 const useCat = () => {
-  const [state, setState] = useState<CatState>({
-    data: null,
-    isLoading: true,
-    error: null,
-  });
+  const [state, setState] = useState<CatState>(initState);
 
   const getCat = async () => {
-    setState((prev) => ({ ...prev, isLoading: true, error: null }));
+    setState(initState);
     try {
       const catData = await fetchCat();
       setState({ data: catData, isLoading: false, error: null });
