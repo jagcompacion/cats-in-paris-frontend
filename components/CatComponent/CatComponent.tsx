@@ -21,6 +21,7 @@ const CatComponent = () => {
                 source={{ uri: data.imageUrl }}
                 className="w-full h-64 mb-5"
                 resizeMode="cover"
+                testID="cat-image"
               />
             )}
             <Text className="text-lg font-semibold">
