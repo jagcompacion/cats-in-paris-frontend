@@ -14,8 +14,9 @@ Your task is to build a very simple React Native mobile app that displays random
 3. Include a button to fetch a new random cat
 4. Handle loading states while the image is being fetched
 5. Handle and display any potential errors
-6. Style the app to be visually appealing
-7. Only `npm run web` needs to show a working app (don't worry about native builds for this)
+6. Style the app simply to be visually appealing
+7. Write a test that mocks the API calls and checks that data is displayed correctly
+8. Only `npm run web` needs to show a working app (don't worry about native builds for this)
 
 ## API Details
 
